@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f3f3f3;
+}
+
+.navbar {
+    background: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+.search-bar {
+    padding: 5px;
+    width: 200px;
+}
+
+.container {
+    display: none;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    display: none;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+button {
+    background: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+.page-content {
+    display: block;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+#contact-page {
+    text-align: center;
+    padding: 20px;
+    background: rgb(215, 207, 193);
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-page {
+    text-align: center;
+    padding: 20px;
+    background: rgb(215, 207, 193);
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-page {
+    text-align: center;
+    padding: 20px;
+    background: rgb(215, 207, 193);
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Styles */
+#cart-items {
+    text-align: center;
+    padding: 20px;
+    background:  rgb(215, 207, 193);
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.cart-item-details h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.cart-item-details p {
+    margin: 0;
+}
+
+.remove-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+#cart-empty-message {
+    font-style: italic;
+    color: #888;
+}
+
+#cart-total {
+    font-weight: bold;
+}
+
+/* Cart Icon Styles */
+.cart-icon {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.cart-icon:hover {
+    background: #555;
+}
+
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 0.7em;
+}
+
+/* Login/Signup Styles */
+#login-page, #signup-page {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-page h2, #signup-page h2 {
+    margin-bottom: 20px;
+}
+
+#login-form label, #signup-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#login-form input, #signup-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+#pay-now-button {
+    background-color:  #dc3545;  /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+#pay-now-button:hover {
+    background-color: #dc3545; /* Darker green */
+}
+.container {
+    display: flex;  /* This is important */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
